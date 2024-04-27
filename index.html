@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CountrySide</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="Images/weather.webp" alt="Logo"></div>
+        <div class="page-title"><a href="index.html">CountrySide</a></div>
+        <nav>
+            <ul>
+                <input type="text" placeholder="Enter Country Name" id="countryName">
+                <button onclick="connect_country()" id="countrySearch">Search</button>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="hero">
+            <h1>
+            Welcome to CountrySide
+            </h1>
+            <i>Please enter the name of a country in the searchbox above to get weather and other relevant information about the country</i>
+        </div>
+
+        <div class="container hidden">
+            <!-- Temperature Card -->
+            <div class="TemperatureCard" id="TemperatureCard">
+                <div class="temp">
+                    24 C
+                </div>
+
+                <div class="date">
+                    <img src="Images/black_calendar_app_icon__-removebg-preview.png" alt="" height="48px" width="48px">
+                    <div id="dateItem">26th November, 2024</div>
+                </div>
+
+                <div class="location">
+                    <img src="Images/Location_Icon_Vector_Hd_Images__Vector_Location_Icon__Location_Icons__Location_Icon__Map_PNG_Image_For_Free_Download-removebg-preview.png" alt="" height="47px" width="47px">
+                    <div id="countryItem">Bangladesh</div>
+                </div>
+            </div>
+    
+            <!-- Forecast Card -->
+            <div class="forecastCard" id="forecastCard">
+                <div class="today grid-item">Today</div>
+                <div class="todayTemp grid-item">32 C</div>
+                <div class="dayplus1 grid-item">Monday</div>
+                <div class="degreeplus1 grid-item">31 C</div>
+                <div class="dayplus2 grid-item">Tuesday</div>
+                <div class="degreeplus2 grid-item">34 C</div>
+                <div class="dayplus3 grid-item">Wednesday</div>
+                <div class="degreeplus3 grid-item">31 C</div>
+                <div class="dayplus4 grid-item">Thursday</div>
+                <div class="degreeplus4 grid-item">29 C</div>
+                <div class="dayplus5 grid-item-spec">Friday</div>
+                <div class="degreeplus5 grid-item-spec">32 C</div>
+            </div>
+            
+            <!-- Flag Card -->
+            <div class="flag-Name" id="flagCard">
+                    <div class="flag">
+                        <img src="flag.webp" alt="" height="280px" width="480">
+                    </div>
+                    
+                    <div class="details">
+                        <div class="name">Bangladesh</div>
+                        <div class="cap-details">    
+                            <div class="cap">Capital: Dhaka</div>
+                            <button onclick="" id="details">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- Info Card -->
+            <div class="infoRows hidden" id="infoCards">
+                    <div class="info1 innerGrid">
+                        <div class="label">
+                            Language
+                        </div>
+                        <div class="value">
+                            English
+                        </div>
+                    </div>
+                    <div class="info2 innerGrid">
+                        <div class="label">
+                            Population
+                        </div>
+                        <div class="value">
+                            108,678
+                        </div>
+                    </div>
+                    <div class="info3 innerGrid">
+                        <div class="label">
+                            Continent
+                        </div>
+                        <div class="value">
+                            Asia
+                        </div>
+                    </div>
+                    <div class="info4 innerGrid">
+                        <div class="label">
+                            Currency
+                        </div>
+                        <div class="value">
+                            Dollar
+                        </div>
+                    </div>
+                    <div class="info5 innerGrid">
+                        <div class="label">
+                            Timezone
+                        </div>
+                        <div class="value">
+                            UTC +7
+                        </div>
+                    </div>
+                    <div class="info6 innerGrid">
+                        <div class="label">
+                            Maps
+                        </div>
+                        <div class="value">
+                            <a href="" class="maplink">Google Maps</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <div class="desc">Join Our Infrequently Used, Only On Special Occasions, Non-Spammy Newsletter.</div>
+                <div class="mail-input-field">
+                <input type="text" placeholder="Email Address" id="mail">
+                <button id="Subscribe">Subscribe</button>
+                </div>
+            </div>
+            
+            <div class="follow-us">
+                <h2>Follow Us</h2>
+                <div class="desc"><a href="">Instagram</a></div>
+                <div class="desc"><a href="">Twitter</a></div>
+                <div class="desc"><a href="">Facebook</a></div>
+                <div class="desc"><a href="">Threads</a></div>
+            </div>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
